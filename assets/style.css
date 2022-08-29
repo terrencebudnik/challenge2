@@ -1,0 +1,87 @@
+header {
+    background-color: lightblue;
+    text-align: center;
+    height: 80px;
+
+}
+
+header h1 {
+font-size: 300%;
+padding: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+}
+
+nav li {
+    color: lightblue;
+    display: inline-block;
+    margin: 10px;
+    border-bottom-style: solid;
+    width: 100px;
+}
+
+section {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+#section-headers {
+    border-bottom-style: solid;
+    height: 80Px;
+    font-size: 250%;
+    color: lightblue;
+    padding: 20px;
+}
+
+
+
+section img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section h2 {
+    position: absolute;
+    width: 160px;
+    right: 330px;
+    bottom: 30px;
+    background-color: white;
+    font-size: larger;
+    height: 25px;
+    padding: 3px;
+    text-align: center;
+
+}
+
+main p {
+    margin-top: 10px;
+    padding: 20px;
+
+}
+
+section article {
+    border-style: solid;
+
+}
+
+div section {
+    margin-top: 20px;
+}
+
+#focus-article {
+    margin: auto;
+    height: 150px;
+    width: 150px;
+}
+
+#support-article {
+    display: inline-block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
