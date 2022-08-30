@@ -67,7 +67,7 @@ section img {
    display: flex;
    margin: auto;
    width: 10%;
-   height: 100px;
+   height: 200px;
 }
 
 #info {
@@ -106,7 +106,7 @@ div > section {
 #main-photo {
     display: flex;
     width: 90%;
-    height: 50%;
+    height: 100%;
     border: solid gray;
     opacity: 1;
 }
