@@ -1,10 +1,12 @@
 .flex-box {
     display: flex;
+
 }
 
 .flex-box-row {
     display: flex;
     flex-direction: row;
+   
 }
 
 
@@ -12,7 +14,8 @@ header {
     display: flex;
     height: 100px; 
     align-items: center;  
-    background-color: gray;
+    background-color: lightgray;
+   
 }
 
 header h1 {
@@ -33,6 +36,11 @@ header li {
     border-bottom-style: solid;
     width: 85px;
     justify-content: center;
+}
+
+#text-decoration {
+    color: black;
+    text-decoration: none;
 }
 
 header li:hover {
@@ -66,7 +74,9 @@ section img {
     display: flex;
     margin: auto;
     width: 50%; 
-    flex-shrink: 2;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 div > section {
@@ -81,53 +91,74 @@ div > section {
     border-right-style: solid; 
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .photo-box {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 90%;
     width: 80%;
     margin: auto;
     justify-content: center;   
 }
 
 #main-photo {
-    width: 100%;
+    display: flex;
+    width: 90%;
     height: 50%;
     border: solid gray;
+    opacity: 1;
 }
+
+#main-photo:hover {
+    opacity: .5;
+}
+
 
 div article {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 50%;
     flex-wrap: wrap;
     justify-content: center;
-  
+    margin: auto;  
 }
 
-#supporting-photo {
+
+#supporting-section {
     height: 50%;
     width: 50%;
     border: solid gray;
+    opacity: 1;
+}
+
+#supporting-photo {
+    height: 100%;
+    width: 100%;
+}
+
+#supporting-section:hover img {
+    opacity: .5;
+
 }
 
 
 footer {
-    background-color: gray;
     width: 100%;
     height: 40px;
+    background-color: lightgrey;
 }
 
 footer>section {
     display: flex;
     color: black;
     font-size: 150%;
-    width: 25%;
+    width: 20%;
     border-right-style: solid; 
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 
 footer ul {
@@ -138,16 +169,27 @@ footer ul {
 
 }
 
+footer li {
+    border-bottom-style: solid;
+}
+
+
+
+footer li:hover {
+    background-color: gray;
+}
+
 
 
     
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightgray;
-        
-    }
-    .flex-container {
-       flex-direction: column;
-    }
-}  
+@media only screen and (max-width: 768px) {
 
+    body * {
+       flex-direction: column;
+}
+
+    p {
+    flex-basis: 0 10;
+}
+
+}
